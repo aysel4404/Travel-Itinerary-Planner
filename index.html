@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Travel Planner</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+
+<header class="hero">
+
+<h1>🌍 Smart Travel Planner</h1>
+
+<p>Plan your perfect trip with smart itinerary suggestions</p>
+
+</header>
+
+
+<div class="main-container">
+
+<!-- LEFT SIDE (FORM) -->
+
+<div class="planner-card">
+
+<h2>Plan Your Trip</h2>
+
+<div class="form-group">
+
+<label>City</label>
+
+<input type="text" id="city" placeholder="Enter destination city">
+
+</div>
+
+<div class="form-group">
+
+<label>Number of Days</label>
+
+<input type="number" id="days" placeholder="Enter number of days">
+
+</div>
+
+<div class="form-group">
+
+<label>Travel Interest</label>
+
+<select id="interest">
+
+<option value="general">General</option>
+
+<option value="food">Food</option>
+
+<option value="nature">Nature</option>
+
+<option value="culture">Culture</option>
+
+</select>
+
+</div>
+
+<button onclick="generatePlan()">Generate Itinerary</button>
+
+</div>
+
+
+<!-- RIGHT SIDE (MAP) -->
+
+<div class="map-section">
+
+<div id="map"></div>
+
+</div>
+
+</div>
+
+
+<!-- ITINERARY SECTION -->
+
+<div class="itinerary-section">
+
+<h2>Your Travel Plan</h2>
+
+<div id="result"></div>
+
+</div>
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

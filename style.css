@@ -1,0 +1,181 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+/* HERO SECTION */
+
+.hero{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+background-size:cover;
+background-position:center;
+height:220px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:16px;
+opacity:0.9;
+}
+
+/* MAIN LAYOUT */
+
+.main-container{
+display:flex;
+gap:30px;
+padding:40px;
+}
+
+/* PLANNER CARD */
+
+.planner-card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+width:320px;
+}
+
+.planner-card h2{
+margin-bottom:20px;
+}
+
+/* FORM */
+
+.form-group{
+margin-bottom:15px;
+}
+
+label{
+display:block;
+margin-bottom:5px;
+font-weight:500;
+}
+
+input,select{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+/* BUTTON */
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#ff6b6b;
+color:white;
+font-size:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff4b4b;
+}
+
+/* MAP SECTION */
+
+.map-section{
+flex:1;
+}
+
+#map{
+height:450px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ITINERARY */
+
+.itinerary-section{
+padding:40px;
+}
+
+.itinerary-section h2{
+margin-bottom:20px;
+}
+
+#result h4{
+margin-top:15px;
+}
+
+#result ul{
+margin-left:20px;
+margin-top:5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.main-container{
+flex-direction:column;
+}
+
+.planner-card{
+width:100%;
+}
+
+#map{
+height:350px;
+}
+
+}
+
+/* DAY CARD */
+
+.day-card{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* PLACES GRID */
+
+.places-container{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+gap:12px;
+margin-top:10px;
+}
+
+/* PLACE CARD */
+
+.place-card{
+background:#f9f9f9;
+padding:12px;
+border-radius:8px;
+border:1px solid #eee;
+transition:0.3s;
+font-size:14px;
+}
+
+.place-card:hover{
+background:#ffefef;
+transform:translateY(-3px);
+}
